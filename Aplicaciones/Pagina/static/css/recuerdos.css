@@ -1,0 +1,179 @@
+#fondo1{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('Imagenes/Background/backfondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: miAnimacion 18s linear 12s infinite;
+    -webkit-animation: miAnimacion 18s linear 12s infinite;
+    -moz-animation: miAnimacion 18s linear 12s infinite;
+}
+
+#fondo2{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('../Imagenes/Background/Modern.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: miAnimacion 18s linear 6s infinite;
+    -webkit-animation: miAnimacion 18s linear 6s infinite;
+    -moz-animation: miAnimacion 18s linear 6s infinite;
+}
+
+#fondo3{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('../Imagenes/Background/Christmas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: miAnimacion 18s linear 0s infinite;
+    -webkit-animation: miAnimacion 18s linear 0s infinite;
+    -moz-animation: miAnimacion 18s linear 0s infinite;
+}
+
+/*BARRA DE NAVEGACION*/
+.navbar{
+  padding: .6rem 1rem;
+  color: white;
+  font-size: 1rem;
+}
+.bg-dark {
+    background-color: #b01b0f !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-left: .9rem;
+  padding-right: 2.5rem;
+  font-family: 'Montserrat';
+}
+
+
+/*HOME*/
+.felizpino{
+  margin-top: 5.5rem;
+}
+
+.titulo{
+  color: black;
+  text-align: center;
+}
+
+h1{
+  font-size: 6.8vw;
+  font-family: 'Tangerine';
+  color:  #b7180c ;
+}
+
+/*MENSAJE NAVIDEO*/
+.mensaje{
+  padding: 25px;
+}
+
+.lead{
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .logomerry {
+    display: none;
+  }
+}
+
+
+.transparent {
+  opacity: 0.7;
+  padding: 10px;
+}
+
+.transparent:hover{
+  opacity: 1;
+}
+
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Ubicación*/
+.evento{
+background-color: #836107;
+color: white;
+}
+
+.tituloubicacion{
+font-weight: bold;
+font-family: Codystar;
+vertical-align: center;
+}
+
+.textoubicacion{
+font-family: Montserrat;
+font-size: 1.1rem;
+vertical-align: center;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: 4px solid  #830772;
+}
+
+.footer {
+  background-attachment: fixed;
+}
+
+.footer {
+  padding: 6.25rem 0 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.85))), url('../BOOTSTRAP/Imagenes/Background/contactofondo.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url('../BOOTSTRAP/Imagenes/Background/contactofondo.jpg');
+      background-position-x: 0%, 0%;
+      background-position-y: 0%, 0%;
+      background-attachment: scroll, scroll;
+      background-size: auto auto, auto auto;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.h5 {
+font-size: 2.90625rem;
+font-weight: 900;
+line-height: 1.2;
+}
+
+.footer .footer-social {
+padding: 6.25rem 0;
+}
+
+.px-3 {
+padding-left: 3rem !important;
+}
+
+#seccion2{
+padding-top: 30px;
+}
+
+#seccion3{
+padding-top: 30px;
+}
+
+.logomerry img {
+  transition: transform 0.3s ease-out;
+}
+
+.logomerry img:hover {
+  transform: translateX(10px) translateY(10px);
+}

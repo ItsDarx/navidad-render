@@ -1,0 +1,275 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f0f0f0; 
+}
+
+.video-container iframe {
+    max-width: 80%; 
+    width: 100%;
+    height: 700px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); 
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+}
+
+.card-title {
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.card-title01 {
+    font-size: 45px; 
+    font-weight: bold;
+}
+
+.card-title02 {
+    font-size: 35px; 
+    font-weight: bold;
+}
+
+.card-title03 {
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.card-title04 {
+    font-size: 25px; 
+    font-weight: bold;
+}
+    </style>
+    
+</head>
+<body>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 700px;">
+                <img src="{% static 'imagenes/mejores-imagenes-de-navidad-foto-12.jpg' %}" class="d-block w-100" alt="..." height="1000px">
+            </div>
+            <div class="carousel-item" style="max-height: 700px;">
+                <img src="{% static 'imagenes/Navidad-e1547047735822.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="max-height: 700px;">
+                <img src="{% static 'imagenes/tendances-noel-2022.jpg' %}" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+      <br>
+
+
+      <div class="container-fluid bg-light py-5">
+        <h1 class="text-center">Arbolitos Navideños</h1>
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <div class="image-container">
+                    <a href="real.html"><img src="{% static 'imagenes/arbol4.jpg' %}"  alt="" width="150px" height="150px"></a>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="image-container">
+                    <a href="alnassr.html"><img src="{% static 'imagenes/arbol5.jpg' %}" alt="" width="150px" height="150px"></a>
+                    
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="image-container">
+                    <a href="juve.html"><img src="{% static 'imagenes/arbol6.jpg' %}" alt="" width="200px" height="150px"></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <div class="row">
+            <p class="text-center">Arbolitos navideños con sus decoraciones para sus hogares </p>
+        </div>
+      </div>
+
+      
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <div class="card border-0">
+                    <img src="{% static 'imagenes/navidad-espana.jpg' %}" class="card-img-top rounded-circle" alt="..." width="150px" height="400px">
+                    <div class="card-body">
+                      <h5 class="card-title">España</h5>
+                      <p class="card-text">Vamos a aprovechar para contarte más sobre las tradiciones de Navidad en España. Si has estado en Navidad en España quizá ya conoces nuestras costumbres, si no, es posible que descubras una forma nueva de vivir esta fiesta que te sorprenda. Aprovechamos también para darte un pequeño vocabulario de Navidad.</p>
+                      <a href="#" class="btn btn-primary">Saber mas...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card border-0">
+                    <img src="{% static 'imagenes/como-se-celebra-la-navidad-en-el-mundo-anglosajon.jpg' %}" class="card-img-top rounded-circle" alt="..."  width="100px" height="400px">
+                    <div class="card-body">
+                      <h5 class="card-title">Estados Unidos</h5>
+                      <p class="card-text">La temporada de Navidad comienza el mixing Sunday. El domingo anterior al comienzo del Adviento las familias se reúnen para hacer el Christmas Pudding. Este es un postre especial que se hace únicamente para las Navidades. Básicamente es un bizcocho con frutas y especias. Lo mágico del asunto es que cada familia tiene su propia receta secreta, transmitida de abuelas a nietas durante generaciones. </p>
+                      <a href="#" class="btn btn-primary">Saber mas...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card border-0">
+                    <img src="{% static 'imagenes/Diseno-sin-titulo.jpg' %}" class="card-img-top rounded-circle" alt="..." width="150px" height="400px">
+                    <div class="card-body">
+                      <h5 class="card-title">China</h5>
+                      <p class="card-text">Si bien el simbolismo religioso navideño está bastante reducido en cómo se celebra la Navidad en China, en el aspecto de la decoración, el país asiático se destaca. Varias de las ciudades más grandes del país, justamente las más occidentalizadas, erigen sobre sus calles, avenidas y locales comerciales, impresionantes decoraciones de Navidad. Beijing, Shanghai y Hong Kong son las que mejor aprovechan el aspecto decorativo de la Navidad.</p>
+                      <a href="#" class="btn btn-primary">Saber mas...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="container-fluid bg-light py-5">
+        <h1 class="text-center">FAMILIAS</h1>
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <p>Familias en las fiestas de Navidad</p>
+            </div>
+        </div>
+      </div>  
+      <br>
+
+
+      <div class="container">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{% static 'imagenes/mexican-christmas-party.jpg' %}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">La temporada navideña es donde nosotros, con aquellos a quienes amamos, nos despedimos del año anterior y damos la bienvenida a un nuevo año con los mejores deseos y esperanzas para todos.</p>
+                        <p class="card-text"><small class="text-body-secondary">Familia Mexicana</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">D​esde hace un par de semanas han comenzado a aparecer en las calles esas clásicas luces que anuncian la llegada ya casi inminente de la Navidad, unos años más abundantes que otros en función del dinero que cada ayuntamiento decida destinar a dicha tradición.​</p>
+                        <p class="card-text"><small class="text-body-secondary">Familia Inglesa</small></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'imagenes/familia inglesa.jpg' %}" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{% static 'imagenes/familia española.jpg' %}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">La familia es la familia, y las fiestas suelen ser motivo de reunión familiar. ¿Alguna vez has pensado que reunir a todos los miembros de la familia en torno a la mesa no sólo permite brindar y festejar sino que al mismo tiempo nos ayuda a estar más saludables? Y lo mejor de todo es que esto se aplica durante todo el año.</p>
+                        <p class="card-text"><small class="text-body-secondary">Familia Española</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Lo primordial es disfrutar con alegría y espiritualidad. Transmite a tus hijos el mensaje de renovación de fe y la alegría que acompaña las tradiciones navideñas. Estas son maneras de cultivar el espíritu y encontrar felicidad en el interior de cada uno. Reflexionar y orar juntos, hablar sobre el significado de la Navidad en las distintas tradiciones religiosas, contar anécdotas sobre la celebración de estas tradiciones en la familia, son una manera de fortalecer el espíritu navideño.
+
+                            ​ </p>
+                        <p class="card-text"><small class="text-body-secondary">Familia Francesa</small></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'imagenes/familiaFrancesa.jpg' %}" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary mx-auto">
+            <a href="#" class="btn btn-primary">Saber mas...</a>
+        </button>
+    </div>
+    <br>
+
+
+
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+{% endblock %}

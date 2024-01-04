@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block titulo %} {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{url 'inicio' %}"> <img src="https://casanavidad.com/wp-content/uploads/2021/07/logo3.jpg" alt="" style="height: 90px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'inicio' %}" style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'empresa' %}" style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">EMPRESA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'servicios' %}" style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'productos' %}" style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'globos' %}" style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">GLOBOS</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link active" href="{% url 'contactos' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">CONTACTOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">
+              Más Información
+            </a>
+            <ul class="dropdown-menu bg-danger">
+              <li><a class="dropdown-item" href="{% url 'regalos' %}"   style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">REGALOS</a></li>
+              <li><a class="dropdown-item" href="{% url 'viajes' %}"   style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">VIAJES</a></li>
+              <li><a class="dropdown-item" href="{% url 'detalles' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">DETALLES</a></li>
+              <li><a class="dropdown-item" href="{% url 'fiesta' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">FIESTA</a></li>
+              <li><a class="dropdown-item" href="{% url 'mensaje' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">MENSAJE</a></li>
+              <li><a class="dropdown-item" href="{% url 'recuerdos' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">RECUERDOS</a></li>
+              <li><a class="dropdown-item" aria-current="page" href="{% url 'principal' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">PRINCIPAL</a></li>
+              <li><a class="dropdown-item" aria-current="page" href="{% url 'celebraciones' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">CELEBRACIONES</a></li>
+              <li><a class="dropdown-item" aria-current="page" href="{% url 'videos' %}"  style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">VIDEOS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+
+    {% block contenido %}
+    {% endblock %}
+<br><br>
+<footer class="bg-danger text-light text-center py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 text-center">
+        <h3 style="font-family: 'Times New Roman', Times, serif; color: aliceblue;"><b>CASA NAVIDAD</b></h3>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">Av. Pres. Roque Sáenz Peña 985, CABA</p>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">011 4326-0648</p>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">+54 9 11 5384-6057</p>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">casa_navidad@yahoo.com.ar</p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <h3 style="font-family: 'Times New Roman', Times, serif; color: aliceblue;"><b>SELECCIONE</b></h3>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">Servicio 1</p>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">Servicio 2</p>
+        <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">Servicio 3</p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.03962662546!2d-58.381025!3d-34.603911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf0195922f%3A0x81b7c2d4bf81a79b!2s9%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1703884487851!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

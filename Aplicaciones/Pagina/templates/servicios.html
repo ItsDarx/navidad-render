@@ -1,0 +1,90 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!--carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'imagenes/servicios.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+
+      <div class="container">
+        <h2 style="font-family: 'Times New Roman', Times, serif;">Proveemos a nuestros clientes de información y orientación en el arte de engalanar su hogar o su empresa porque nuestra dedicación es exclusiva y especializada en esta maravillosa labor. <br>
+ 
+
+            Nos especializamos también en el asesoramiento, decoración y venta de productos a diferentes Empresas, Bancos, Hoteles de todo el país. <br>
+             
+            
+            Somos los únicos fabricantes de Globos de vidrio soplados a boca y pintados a mano del país, con el color y el logotipo de su empresa como así para cualquier otra especial ocasión.</h2>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="{% static 'imagenes/s1.jpg' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+          <img src="{% static 'imagenes/s2.jpg' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+          <img src="{% static 'imagenes/s3.jpg' %}" class="card-img-top" alt="...">
+        </div>
+      </div>
+<!--redes social-->
+<div class="container">
+    <br>
+    <center>
+      <h1 style="font-family: 'Times New Roman', Times, serif; color: red;">Seguimos en Nuestras Redes Sociales</h1>
+    </center>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://www.instagram.com/casa.navidad.store/">
+          <img src="{% static 'imagenes/insta.png' %}" alt="" width="300px">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.facebook.com/profile.php?id=100064604597152">
+          <img src="{% static 'imagenes/f.jpg' %}" alt="" width="300px">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.tiktok.com/@casanavidad">
+          <img src="{% static 'imagenes/tik.jpg' %}" alt="" width="300px">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+
+
+
+
+{% endblock %}

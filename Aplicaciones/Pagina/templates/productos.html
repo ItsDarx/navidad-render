@@ -1,0 +1,199 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'imagenes/productos.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'imagenes/cartapro.jpg' %}" alt="">
+            </div>
+            <div class="col-md-6 old" > 
+                <h2 style="font-family: 'Times New Roman', Times, serif;">En CASA NAVIDAD podrás encontrar más de 2000 artículos y decoración, destacándose los Globos y Adornos de vidrio, exclusividad única de nuestra empresa, ya que los mismos están soplados a boca y pintados a mano por artesanos y son destinados a decorar árboles o distintos arreglos navideños.
+                    Contamos también con una variada colección de Ángeles y Pesebres de distintas procedencias que se destacan por ser piezas únicas y de un estilo inigualable.
+                    Moños, cintas, medias, gorros y manteles en una variedad de colores y modelos que dan un toque para vestir de Navidad cada rinconcito de su casa o empresa.
+                    Nuestros Árboles, son únicos en el país, confeccionados con materiales especiales, siendo algunos antillamas y con un sistema de armado y seguridad inmejorable.
+                    Los encontrarás en las alturas que van desde los 30 cm, hasta más de 3 metros.
+                    Podrás encontrar además todo lo referente a iluminación, adornos de puerta y figuras musicales entre otros.</h2>
+            </div>
+        </div>
+      </div>
+
+      <!--img de productos-->
+
+      <div class="container">
+        <br><br>
+        <center>
+            <h2 style="font-family: 'Times New Roman', Times, serif; color: red;">Algunos de Nuestros Productos</h2>
+        </center>
+        <div class="row">
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro01.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro02.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro03.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro04.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro05.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro06.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro07.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro08.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro09.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro10.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro11.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro12.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro13.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro14.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro15.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro16.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro17.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro18.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+          <img src="{% static 'imagenes/pro19.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro20.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="{% static 'imagenes/pro21.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+
+
+
+        <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+            <img src="{% static 'imagenes/pro23.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro24.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro25.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+
+
+
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+            <img src="{% static 'imagenes/pro26.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro27.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro28.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+            <img src="{% static 'imagenes/pro29.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image" >
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro30.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+          <div class="transparent col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img src="{% static 'imagenes/pro31.jpg' %}" class="img-fluid img-thumbnail" alt="Responsive image">
+          </div>
+      </div>
+
+
+<!--redes social-->
+<div class="container">
+    <br>
+    <center>
+      <h1 style="font-family: 'Times New Roman', Times, serif; color: red;">Seguimos en Nuestras Redes Sociales</h1>
+    </center>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://www.instagram.com/casa.navidad.store/">
+          <img src="{% static 'imagenes/insta.png' %}" alt="" width="300px">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.facebook.com/profile.php?id=100064604597152">
+          <img src="{% static 'imagenes/f.jpg' %}" alt="" width="300px">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.tiktok.com/@casanavidad">
+          <img src="{% static 'imagenes/tik.jpg' %}" alt="" width="300px">
+        </a>
+      </div>
+    </div>
+  </div><
+
+</body>
+</html>
+
+
+
+{% endblock %}

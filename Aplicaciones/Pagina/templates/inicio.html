@@ -1,0 +1,120 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} INCIO DE LA PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  type="text/css" rel="stylesheet" href="{% static "css/inicio.css" %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="d-block w-100" autoplay muted>
+              <source src="{% static 'imagenes/videoinicio.mp4' %}" type="video/mp4">
+              Tu navegador no soporta el tag de video.
+            </video>
+          </div>
+
+          
+          <div class="carousel-item">
+            <img src="{% static 'imagenes/img2.png' %}">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'imagenes/img3.png' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 old">
+            <h2>Fundada en 1977, CASA NAVIDAD abre sus puertas siendo así la primer y única empresa del país dedicada exclusivamente a los artículos navideños.
+ 
+
+              Desde entonces la misma cuenta con un espacio sobre Avenida Diagonal Norte (a metros del obelisco) donde podrá encontrar la más alta gama de productos decorativos tanto para interior o arboles como también para exterior.
+               
+              
+              CASA NAVIDAD ha sido siempre reconocida en la industria navideña como pionera en cuanto a exclusividad de diseños e incorporación de las últimas tendencias. Tenemos el color y la calidez para que el hogar o la empresa se ambiente en el amable clima de las fiestas por excelencia: Árboles, adornos, luces, guirnaldas y pesebres entre otros.
+               
+              
+              A través de los años CASA NAVIDAD es reconocida como un espacio tradicional de visita para coleccionistas, decoradores y artistas que concurren en busca de nuestros preciosos modelos y ultimas novedades. Venga a visitarnos ! Acreditamos más de 40 años de experiencia al servicio del buen gusto para una navidad con estilo propio.</h2>
+          </div>
+          <div class="col-md-6">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 500px; align-self: start;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'imagenes/inicio01.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'imagenes/inicio02.jpeg' %}">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div><br>
+          </div>
+        </div>
+      </div>
+
+      <!--redes sociales-->
+      <div class="container">
+        <br>
+        <center>
+          <h1 style="font-family: 'Times New Roman', Times, serif; color: red;">Seguimos en Nuestras Redes Sociales</h1>
+        </center>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://www.instagram.com/casa.navidad.store/">
+              <img src="{% static 'imagenes/insta.png' %}" alt="" width="300px">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.facebook.com/profile.php?id=100064604597152">
+              <img src="{% static 'imagenes/f.jpg' %}" alt="" width="300px">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.tiktok.com/@casanavidad">
+              <img src="{% static 'imagenes/tik.jpg' %}" alt="" width="300px">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+</body>
+</html>
+
+
+{% endblock %}

@@ -1,0 +1,147 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Navideños</title>
+    <link rel="stylesheet" href="{% static "css/viajes.css" %}">
+</head>
+<body>
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#consejos">Consejos de Viaje</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <p>Descubre los destinos más populares para viajar durante la temporada navideña...</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'imagenes/gala.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Islas Galápagos</h5>
+                <p class="card-text">Descripción: Archipiélago volcánico único en el Pacífico, famoso por su biodiversidad única y especies endémicas, como las tortugas gigantes y los pinzones de Darwin.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'imagenes/cuenca.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cuenca</h5>
+                <p class="card-text">Ciudad colonial ubicada en los Andes, conocida por su arquitectura histórica, calles empedradas y la Catedral Nueva, una de las catedrales más grandes de América del Sur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'imagenes/ba.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Baños</h5>
+                <p class="card-text">Ciudad termal rodeada de volcanes, conocida por sus aguas termales y actividades al aire libre, como senderismo, ciclismo y deportes acuáticos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'imagenes/cotopaxi.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Parque Nacional Cotopaxi</h5>
+                <p class="card-text">Hogar del volcán Cotopaxi, uno de los volcanes activos más altos del mundo. Ofrece oportunidades para practicar senderismo, escalada y observación de la flora y fauna andina.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="ofertas-especiales">
+      <h2>Ofertas Especiales</h2>
+      <p>¡Aprovecha nuestras ofertas especiales para hacer tu viaje navideño más asequible!</p>
+  
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="oferta">
+                      <h3>Descuento Especial de Navidad</h3>
+                      <p>Reserva tu estancia durante la temporada navideña y disfruta de un descuento especial. ¡Celebra las fiestas con nosotros!</p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="oferta">
+                      <h3>Paquetes Navideños Personalizados</h3>
+                      <p>Descubre nuestros paquetes navideños personalizados que incluyen alojamiento, comidas festivas y actividades especiales para toda la familia.</p>
+                  </div>
+              </div>
+<br>
+              <div class="col-md-6">
+                <div class="oferta">
+                    <h3> Por Navidad</h3>
+                    <p>Reserva tu estancia durante la temporada navideña y disfruta de un descuento especial. ¡Celebra las fiestas con nosotros!</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="oferta">
+                  <h3>Por Diciembre</h3>
+                  <p>Reserva tu estancia durante la temporada navideña y disfruta de un descuento especial. ¡Celebra las fiestas con nosotros!</p>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+  
+
+  <section id="consejos-de-viaje">
+    <h2>Consejos de Viaje para una Navidad Inolvidable</h2>
+    <p>¡Haz que tu viaje navideño sea inolvidable con estos consejos útiles para planificar y disfrutar al máximo!</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="consejo">
+                    <img src="{% static 'imagenes/consejos.jpeg' %}" alt="Consejo 1">
+                    <h3>Empaca con Anticipación</h3>
+                    <p>Prepara tu maleta con tiempo, incluyendo ropa abrigada para las noches festivas y artículos esenciales para disfrutar al máximo de tu estancia.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="consejo">
+                    <img src="{% static 'imagenes/con.jpeg' %}" alt="Consejo 2">
+                    <h3>Explora Tradiciones Locales</h3>
+                    <p>Sumérgete en la cultura navideña local explorando tradiciones y participando en eventos festivos. Descubre la magia de la temporada en cada destino.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="consejo">
+                    <img src="{% static 'imagenes/cons.jpeg' %}" alt="Consejo 3">
+                    <h3>Reserva Actividades Especiales</h3>
+                    <p>Asegúrate de reservar con anticipación actividades navideñas especiales, como cenas temáticas, recorridos festivos y eventos exclusivos para huéspedes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? Contáctanos para obtener más información.</p>
+        <!-- Agrega un formulario de contacto u otra información de contacto -->
+    </section>
+
+
+</body>
+</html>
+
+
+{% endblock %}

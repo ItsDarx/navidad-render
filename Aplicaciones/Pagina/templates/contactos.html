@@ -1,0 +1,86 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/estilos.css" %}">
+</head>
+<body>
+
+
+
+    <!--carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'imagenes/contacto.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+
+      <section id="formulario-contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="font-family: 'Times New Roman', Times, serif; color: red;">info de Contacto</h2>
+                <h4 style="font-family: 'Times New Roman', Times, serif;">Av. Pres. Roque Sáenz Peña 985, CABA</h4><br>
+                <h4 style="font-family: 'Times New Roman', Times, serif;">011 4326-0648</h4><br>
+                <h4 style="font-family: 'Times New Roman', Times, serif;">+54 9 11 5384-6057</h4><br>
+                <h4 style="font-family: 'Times New Roman', Times, serif;">casa_navidad@yahoo.com.ar</h4><br>
+            </div>
+            <div class="col-md-6">
+                <form action="#" method="post" id="contact-form">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="tel" name="tel">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+        
+    </section>
+    
+
+
+
+
+</body>
+</html>
+
+
+
+
+{% endblock %}

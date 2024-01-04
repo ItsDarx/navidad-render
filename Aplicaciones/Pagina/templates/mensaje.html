@@ -1,0 +1,100 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} INCIO DE LA PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIDAD</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/mensaje.css" %}">
+
+</head>
+<body>
+
+
+     <div class="container-fluid">
+        <div id="seccion2"></div>
+        <div class="row mensaje">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo">
+            <h1>Mensaje Navideño</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="{% static 'imagenes/cri.avif' %}" class="img-fluid" alt="Responsive image" width="100%" height="70%">
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 logomerry">
+            <img src="{% static 'imagenes/nav07.jpeg' %}" class="img-fluid" alt="Responsive image" width="100%" >
+        </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p class="lead text-justify">Las fiestas navideñas para muchos es tiempo de unión, de estar juntos en familia, de decorar el árbol, cada rincón de la casa, iluminar las calles de luz y hacer intercambio de regalos. La familia y los amigos se reúnen alrededor de una mesa con comida abundante y se ofrecen los mejores deseos para el año siguiente.
+                <p class="lead text-justify">Y es que la mayoría aprovechan esta época del año para reflexionar sobre lo vivido, agradecer y evaluar lo aprendido. Es un momento en el que se realizan balances sobre el pasado.</p>
+                <p class="lead text-justify">A continuación, algunas frases para saludar en fiestas de fin de año:</p>
+                <p class="lead text-justify">1.- “Que Dios en su infinita bondad, bendiga y llene nuestros corazones con paz y amor la noche de Navidad. Felices fiestas”.</p>
+                <p class="lead text-justify">2.- “La Navidad es sinónimo de amor… es un momento en que el amor de Dios y de los seres humanos debe prevalecer sobre el odio y la amargura… un momento en que nuestros pensamientos, acciones y el espíritu de nuestras vidas manifiesten la presencia de Dios”.</p>
+                <p class="lead text-justify">3.- “¿Qué es la Navidad? Es la ternura del pasado, el valor del presente y la esperanza del futuro. Es el deseo sincero de que cada taza se puede llenar con bendiciones ricas y eternas, y de que cada camino nos lleve a la paz”.</p>
+                <p class="lead text-justify">4.- “Que la Navidad te ayude a cumplir todos los sueños de tu corazón, que te traiga alegría para cada día del año nuevo y que puedas compartir todo esto con las personas especiales que forman parte de su vida. ¡Feliz Navidad!”</p>
+                <p class="lead text-justify">5.- “Que las celebraciones de Navidad estén marcadas por el deseo de una nueva vida y un nuevo camino que nos lleve a un único objetivo: sembrar el amor y la paz”.</p>
+
+            <br><br><kbd>De todo corazón te deseamos Muchas Felicidades y éxitos en tu vida.</kbd>
+            </p>
+          </div>
+        </div>
+     </div>
+
+     <div class="container">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'imagenes/nav08.jpeg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'imagenes/nav09.avif' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'imagenes/nav10.jpeg' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+        </div>
+     </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+{% endblock %}

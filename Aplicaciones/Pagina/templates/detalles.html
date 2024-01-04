@@ -1,0 +1,94 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} INCIO DE LA PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+{% load static %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIDAD</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link  type="text/css" rel="stylesheet" href="{% static "css/detalles.css" %}">
+  
+</head>
+<body>
+
+     <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <h1>Detalles de la Navidad</h1>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="transparent col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+              <p class="lead text-justify">
+                 La Navidad se trata de pasar tiempo con familiares y amigos. Se trata de crear recuerdos felices que durarán toda la vida. Es la época de desearse mutuamente alegría, amor y paz, es por eso que este año te invitamos cordialmente a celebrar la maravilla y la alegría de la Navidad en compañia de tus seres queridos en nuestro hogar. Asiste, tenemos preparado muchas atracciones, platillos tipicos, musica, juegos, y mucho mas.
+              </p>
+            </div>
+  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+              <img src="{% static 'imagenes/nav04.jpeg' %}" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 text-center">
+              <img src="{% static 'imagenes/nav05.webp' %}" class="img-fluid img-thumbnail" alt="Responsive image" width="100%">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 text-center">
+              <p class="lead text-justify">
+                Sientete como niños otra vez, siente con gran ilusión al ver las luces del árbol y la alegría en los rostros de los que amamos, sonrie a cada momento, olvida todos tus pesares y solo vuelve a tener tu alma de niño. <br><br>
+                “No tengo palabras para expresar este gran sentimiento que siento en la Noche Buena por todas las personas que estimo. Quiero que sepan que siempre les voy a desear lo mejor de la vida. Felices Fiestas Navideñas.” 
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="transparent col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+              <p class="lead text-justify">
+                Es curioso, pero la Navidad como tal marca el nacimiento de Jesucristo el 25 de diciembre, pero no se menciona el 25 de diciembre en la Biblia y la mayoría de los historiadores creen que Jesucristo nació en primavera. ¿Por qué escoger este día entonces? Probablemente se eligió el 25 de diciembre porque coincidía con el antiguo festival pagano Saturnalia, que honraba al dios agrícola Saturno con fiestas, juegos de azar y regalos. Las saturnales eran consideradas una gran festividad romana y uno de los actos implicaba un sacrificio en el Templo de Saturno. El banquete público era digno de mención también.
+              </p>
+            </div>
+  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+              <img src="{% static 'imagenes/nav06.avif' %}" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+
+          <br>
+          <br>
+  
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 text-center">
+              <img src="{% static 'imagenes/nav06.jpeg' %}" class="img-fluid img-thumbnail" alt="Responsive image" width="100%">
+            </div>
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 text-center">
+              <p class="lead text-justify"><br><br><br>
+                La fecha del 25 de diciembre se eligió para que coincidiera con el solsticio de invierno en el hemisferio norte. Este evento astronómico marca el día más corto y la noche más larga del año. Muchas culturas antiguas celebraban el solsticio de invierno como un punto de inflexión en el que los días se alargarían gradualmente, simbolizando el regreso de la luz y la vida. 
+              </p>
+            </div>
+          </div>
+  
+
+     </div>
+
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+{% endblock %}

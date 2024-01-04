@@ -1,0 +1,167 @@
+{% extends "plantilla.html" %}
+
+{% block titulo %} PAGINA NAVIDEÑA {% endblock %}
+
+{% block contenido %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGALOSNAVIDAD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!--carrusel-->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://concepto.de/wp-content/uploads/2015/05/Navidad-e1547047735822.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://s1.significados.com/foto/significado-de-la-navidad.jpg?class=ogImageRectangle" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div><br><br>
+
+        <div class="container">
+        <center><h2 style="font-family: 'Times New Roman', Times, serif; color: brown;">LOS MEJORES REGALOS QUE PUEDES DAR!</h2></center>
+        <h4 style="font-family: 'Times New Roman', Times, serif;">La Navidad, una de las festividades más esperadas y celebradas en todo el mundo, es un tiempo lleno de alegría, tradiciones y significados profundos. Cada año, millones de personas alrededor del globo se sumergen en el espíritu navideño, creando momentos especiales con sus seres queridos y compartiendo la magia de la temporada. <br> La Navidad no es solo una celebración religiosa que conmemora el nacimiento de Jesucristo, sino también una época en la que la generosidad, la compasión y la solidaridad se intensifican. Las luces brillantes adornan calles y hogares, los cánticos tradicionales llenan el aire y los aromas de deliciosas comidas nos envuelven, creando una atmósfera única y acogedora.</h4>
+        <h5 style="font-family: 'Times New Roman', Times, serif;">Decoración navideña: <br>
+            Árbol de Navidad y ornamentos. <br>
+            Luces decorativas. <br>
+            Guirnaldas y coronas. <br>
+            Figuras de Papá Noel, renos y duendes.</h5><br><br>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZq_NSbk1yRlgX3v_akUwYJT7eQGEWBl3yXA&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">El mejor regalo!</h5>
+                      <p class="card-text">Estas son solo algunas ideas para inspirarte durante la temporada navideña. Puedes personalizar y adaptar estas opciones según tus preferencias y tradiciones </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://phantom-marca.unidadeditorial.es/183c82f06354e28f2bc4eaf78bb30039/crop/0x86/1000x649/resize/828/f/jpg/assets/multimedia/imagenes/2020/12/11/16076927603932.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Comparte con Amigos</h5>
+                      <p class="card-text">Ya sea que estés buscando el regalo perfecto, quieras endulzar un evento especial o simplemente desees darte un capricho, nuestros bombillos son la elección ideal. </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-166517287-1670794750.jpg?crop=1xw:0.375xh;center,top&resize=1200:*" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Compartir con Familia</h5>
+                      <p class="card-text">Además, contamos con opciones personalizadas para adaptarnos a tus preferencias y hacer de cada pedido una experiencia única y personalizada.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <br>
+            <h1 style="font-family: 'Times New Roman', Times, serif;">Elige el Mejor Regalo de Navidad</h1>
+
+            <p>Seleccionar el regalo perfecto para alguien especial puede ser un desafío, pero con un poco de reflexión y consideración, puedes hacer que tu elección sea más significativa y apreciada.</p>
+
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Consejos para Elegir el Regalo Perfecto:</h2>
+
+            <ol>
+                <li>Conoce sus gustos e intereses.</li>
+                <li>Observa sus necesidades y deseos.</li>
+                <li>Considera la personalización.</li>
+                <li>Regala experiencias inolvidables.</li>
+                <li>Opta por regalos útiles y de calidad.</li>
+                <li>Descubre sus deseos secretos.</li>
+                <li>Regalos relacionados con la temporada.</li>
+                <li>Apoya causas importantes.</li>
+                <li>Revisa su lista de deseos.</li>
+                <li>Hazlo significativo.</li>
+            </ol>
+
+            <p>Recuerda que el regalo perfecto no siempre tiene que ser costoso; lo más importante es mostrar que has dedicado tiempo y consideración en elegir algo que se adapte a sus gustos y personalidad. ¡Felices fiestas!</p>
+
+            <div class="card text-center">
+                <div class="card-header">
+                  TU MEJOR OPCION
+                </div>
+                <div class="card-body">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-166517287-1670794750.jpg?crop=1xw:0.375xh;center,top&resize=1200:*" alt="">
+                  <h5 class="card-title">Regalos Navideños</h5>
+                  <p class="card-text">Recuerda que el regalo perfecto no siempre tiene que ser costoso; lo más importante es mostrar que has dedicado tiempo y consideración en elegir algo que se adapte a sus gustos y personalidad. ¡Felices fiestas!</p>
+                  <a href="#" class="btn btn-danger">Mas info..</a>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  2 days ago
+                </div>
+              </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <br><br><br>
+
+
+
+</body>
+</html>
+
+{% endblock %}
