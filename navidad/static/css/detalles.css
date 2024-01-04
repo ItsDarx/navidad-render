@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url('Imagenes/Background/backfondo.jpg') no-repeat center center fixed;
+   
     background-size: cover;
     animation: miAnimacion 18s linear 12s infinite;
     -webkit-animation: miAnimacion 18s linear 12s infinite;
@@ -13,7 +13,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url('../Imagenes/Background/Modern.jpg') no-repeat center center fixed;
+  
     background-size: cover;
     animation: miAnimacion 18s linear 6s infinite;
     -webkit-animation: miAnimacion 18s linear 6s infinite;
@@ -24,7 +24,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url('../Imagenes/Background/Christmas.jpg') no-repeat center center fixed;
+ 
     background-size: cover;
     animation: miAnimacion 18s linear 0s infinite;
     -webkit-animation: miAnimacion 18s linear 0s infinite;
@@ -137,8 +137,6 @@ vertical-align: center;
 
 .footer {
   padding: 6.25rem 0 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.85))), url('../BOOTSTRAP/Imagenes/Background/contactofondo.jpg');
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url('../BOOTSTRAP/Imagenes/Background/contactofondo.jpg');
       background-position-x: 0%, 0%;
       background-position-y: 0%, 0%;
       background-attachment: scroll, scroll;
